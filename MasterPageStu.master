@@ -1,0 +1,58 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPageStu.master.vb" Inherits="MasterPageStu" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+<title>Online Course Evalution</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/arial.js"></script>
+<script type="text/javascript" src="js/cuf_run.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="main">
+  <div class="header">
+    <div class="header_resize">
+      <div class="menu_nav">
+        <ul>
+           <li><a href="EditStudent.aspx" style="font-weight: bold; color: black">Edit Profile</a></li>
+          <li><a href="ListStuCourses.aspx" style="font-weight: bold; color: black">My Courses</a></li>
+          <li><a href="Index.aspx" style="font-weight: bold; color: black">Log Out</a></li>
+        </ul>
+      </div>
+      <div class="clr"></div>
+      <div class="clr"></div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="content_resize">
+      <div class="mainbar" style="width: 960px" align="center">
+        <div class="article">
+            <div>
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+                &nbsp;</div>
+        </div>
+       </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+
+  <div class="fbg">
+    <div class="fbg_resize">
+      
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer_resize">
+          <p class="lf">© Copyright MyWebSite</p>
+    </div>
+  </div>
+</div>
+    </form>
+</body>
+</html>
